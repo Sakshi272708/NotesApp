@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: rgb(251,182,90);
+}
+h2{
+    text-align: center;
+    color: rgb(255, 149, 0);
+    margin-bottom: 25px;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+#container{
+    max-width: 800px;
+    width: 90%;
+    background-color: #fff;
+    box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+    padding: 2rem;
+    border-radius:10px ;
+}
+#top-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    margin-bottom:10px;
+}
+#note-area{
+    display: none;
+    border-radius: 10px;
+    width: 90%;
+    min-height: 80px;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color:rgba(255,221,180,0.4) ;
+}
+input{
+    width: 90%;
+    box-shadow: 0 12px 24px rgba(0,0,0,0.01);
+    border: none;
+    height: 32px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(255, 221, 180, 0.4);
+    color: rgb(255, 177, 75);
+    font-weight: 500;
+}
+#top-section button{
+    border: none;
+    border-radius: 10px;
+    height: 32px;
+    width: auto;
+    font-weight: 600;
+    background-color: lemonchiffon;
+    color: rgb(255, 178, 63);
+    cursor: pointer;
+    padding: 0 15px;
+}
+#top-section button:hover,input:hover{
+    transform: translateY(-2px);
+}
+input:focus{
+    outline: none;
+    border:rgb(255, 178, 63) ;
+    box-shadow: 0 0 0 3px rgb(255, 226, 175,0.6);    
+}
+
+#cards-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    margin-top: 40px;
+    gap: 20px;
+}
+.notes-card{
+    box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+    padding: 2rem;
+    border-radius:12px;
+    min-height: 120px;
+    width: 200px;
+    transition: 0.2s ease;
+    cursor: pointer;
+
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+.notes-card p{
+    overflow-wrap: break-word;
+}
+.notes-card:hover{
+    transform: translateY(-4px);
+}
+.note-yellow{
+    background-color: #fff1c7;
+}
+
+.note-blue{
+    background-color: #dce8f5;
+}
+
+.note-pink{
+    background-color: #f7d6da;
+}
+
+.note-green{
+    background-color: #dff0d8;
+}
+.edit-btn{
+    border: none;
+    padding: 6px;
+    border-radius: 6px;
+    background-color: white;
+    gap: 8px;
+    margin-top:5px ;
+}
+.dlt-btn{
+    border: none;
+    padding: 6px;
+    border-radius: 6px;
+    background-color: white;
+    margin-top:5px;
+}
